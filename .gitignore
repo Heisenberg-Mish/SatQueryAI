@@ -51,3 +51,13 @@ backend/demo_out.txt
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# python & env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+

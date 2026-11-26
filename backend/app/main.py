@@ -9,17 +9,14 @@ from app.schemas.api import ErrorResponse
 
 DESCRIPTION = """
 Agentic remote-sensing backend for **SatQuery AI** (SIH26167).
-
 Upload one scene or a pair, ask a question in plain language, and the controller
 validates the inputs, routes the query to a task, selects specialist tools from
 the registry, runs them, and returns a grounded answer with visual evidence,
 confidence and an auditable execution trace.
-
 Fine-tuned RS models are not wired yet: specialists currently run a deterministic
 heuristic baseline and report that in `inferenceBackend`. Configure the endpoint
 settings to swap in real weights without changing the API.
 """
-
 
 def create_app() -> FastAPI:
     settings = get_settings()
